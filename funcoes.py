@@ -70,6 +70,16 @@ def calcula_pontos_soma (lista):
         soma += elemento 
     return soma
 
+def calcula_pontos_sequencia_baixa(lista):
+    if (1 in lista and 2 in lista and 3 in lista and 4 in lista):
+        return 15
+    elif (2 in lista and 3 in lista and 4 in lista and 5 in lista):
+        return 15
+    elif (3 in lista and 4 in lista and 5 in lista and 6 in lista):
+        return 15
+    else:
+        return 0
+
 
 
 
