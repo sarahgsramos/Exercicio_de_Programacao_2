@@ -35,4 +35,35 @@ def remover_dado(dados_rolados,dados_no_estoque,dado_para_remover):
     return lista_final
 
 
+def calcula_pontos_regra_simples(lista):
+    dicionario = {1:0, 2:0, 3:0, 4:0, 5:0, 6:0}
+    quant_1 = 0
+    quant_2 = 0
+    quant_3 = 0
+    quant_4 = 0
+    quant_5 = 0
+    quant_6 = 0
+    for elemento in lista:
+        if elemento == 1:
+            quant_1 += 1
+            dicionario[1] = quant_1
+        elif elemento == 2:
+            quant_2 += 1
+            dicionario[2] = quant_2*2
+        elif elemento == 3:
+            quant_3 += 1
+            dicionario[3] = quant_3*3
+        elif elemento == 4:
+            quant_4 += 1
+            dicionario[4] = quant_4*4
+        elif elemento == 5:
+            quant_5 += 1
+            dicionario[5] = quant_5*5
+        elif elemento == 6:
+            quant_6 += 1
+            dicionario[6] = quant_6*6
+    return dicionario
+
+
+
 
