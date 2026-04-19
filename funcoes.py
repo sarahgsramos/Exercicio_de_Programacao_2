@@ -64,6 +64,12 @@ def calcula_pontos_regra_simples(lista):
             dicionario[6] = quant_6*6
     return dicionario
 
+def calcula_pontos_soma (lista):
+    soma = 0 
+    for elemento in lista:
+        soma += elemento 
+    return soma
+
 
 
 
