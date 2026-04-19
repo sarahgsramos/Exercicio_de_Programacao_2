@@ -121,9 +121,4 @@ def calcula_pontos_full_house(valores):
         if contador1 == 2 and contador2 == 3:
             return soma
      
-    return 0
-        
-            
-
-                
-                
+    return 0   
