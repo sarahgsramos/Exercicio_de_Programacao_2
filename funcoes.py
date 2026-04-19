@@ -4,7 +4,7 @@ def rolar_dados(n):
     i = 0
     while i < n:
         sorteio = randint(1,6)
-        dados.append[sorteio]
+        dados.append(sorteio)
         i += 1
     return dados
 
