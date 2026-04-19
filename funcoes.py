@@ -87,7 +87,43 @@ def calcula_pontos_sequencia_alta (lista):
         return 30 
     else:
         return 0
+    
+def calcula_pontos_full_house(valores):
 
+    contador1 = 0
+    contador2 = 0
 
+    soma = 0
 
+    numero1 = valores[0]
+    numero2 = numero1
 
+    for n in valores:
+        if n != numero1:
+            numero2 = n
+            break
+    
+    if numero2 == numero1:
+        return 0
+
+    for n in valores:
+        if n == numero1:
+            contador1 += 1
+            soma += n
+        elif n == numero2:
+            contador2 += 1
+            soma += n
+        else:
+            return 0
+
+        if contador1 == 3 and contador2 == 2:
+            return soma
+        if contador1 == 2 and contador2 == 3:
+            return soma
+     
+    return 0
+        
+            
+
+                
+                
