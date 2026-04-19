@@ -122,3 +122,21 @@ def calcula_pontos_full_house(valores):
             return soma
      
     return 0   
+
+def calcula_pontos_quadra(valores):
+
+    for i in range(len(valores)):
+
+        soma = 0
+        contador = 0
+        numero = valores[i]
+
+        for n in valores:
+            soma += n
+            if n == numero:
+                contador += 1
+        
+        if contador >= 4:
+            return soma
+    
+    return 0 
