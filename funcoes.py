@@ -161,3 +161,15 @@ def calcula_pontos_regra_avancada (lista):
     dicionario["sequencia_alta"] = calcula_pontos_sequencia_alta (lista)
     dicionario["sequencia_baixa"] = calcula_pontos_sequencia_baixa(lista)
     return dicionario
+def faz_jogada (lista,categoria,dicionario):
+    pontos_simples = calcula_pontos_regra_simples(lista)
+    pontos_avancados = calcula_pontos_regra_avancada(lista)
+    numeros_dado = ["1","2","3","4","5","6"]
+    if categoria in numeros_dado:
+        numero = int(categoria)
+        dicionario["regra simples"][numero] = pontos_simples[numero]
+    else:
+        dicionario["regra avançada"][categoria] = pontos_avancados[categoria]
+    return dicionario
+
+
