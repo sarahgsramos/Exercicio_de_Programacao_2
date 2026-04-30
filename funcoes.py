@@ -160,3 +160,4 @@ def calcula_pontos_regra_avancada (lista):
     dicionario["sem_combinacao"] = calcula_pontos_soma(lista)
     dicionario["sequencia_alta"] = calcula_pontos_sequencia_alta (lista)
     dicionario["sequencia_baixa"] = calcula_pontos_sequencia_baixa(lista)
+    return dicionario
