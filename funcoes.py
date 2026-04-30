@@ -167,9 +167,10 @@ def faz_jogada (lista,categoria,dicionario):
     numeros_dado = ["1","2","3","4","5","6"]
     if categoria in numeros_dado:
         numero = int(categoria)
-        dicionario["regra simples"][numero] = pontos_simples[numero]
+        dicionario["regra_simples"][numero] = pontos_simples[numero]
     else:
-        dicionario["regra avançada"][categoria] = pontos_avancados[categoria]
+        dicionario["regra_avançada"][categoria] = pontos_avancados[categoria]
     return dicionario
+
 
 
