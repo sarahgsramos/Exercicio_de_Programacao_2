@@ -169,7 +169,7 @@ def faz_jogada (lista,categoria,dicionario):
         numero = int(categoria)
         dicionario["regra_simples"][numero] = pontos_simples[numero]
     else:
-        dicionario["regra_avançada"][categoria] = pontos_avancados[categoria]
+        dicionario["regra_avancada"][categoria] = pontos_avancados[categoria]
     return dicionario
 
 
