@@ -152,3 +152,11 @@ def calcula_pontos_quina (lista):
         if contagens >= 5:
             return 50
     return 0
+def calcula_pontos_regra_avancada (lista):
+    dicionario = {"cinco_iguais":0, "full_house": 0, "quadra":0, "sem_combinacao": 0, "sequencia_alta": 0, "sequencia_baixa": 0}
+    dicionario["cinco_iguais"] = calcula_pontos_quina(lista)
+    dicionario["full_house"] = calcula_pontos_full_house(lista)
+    dicionario["quadra"] = calcula_pontos_quadra (lista)
+    dicionario["sem_combinacao"] = calcula_pontos_soma(lista)
+    dicionario["sequencia_alta"] = calcula_pontos_sequencia_alta (lista)
+    dicionario["sequencia_baixa"] = calcula_pontos_sequencia_baixa(lista)
