@@ -140,3 +140,15 @@ def calcula_pontos_quadra(valores):
             return soma
     
     return 0 
+
+def calcula_pontos_quina (lista):
+    dicionario = {}
+    for elemento in lista:
+        if elemento not in dicionario:
+            dicionario[elemento] = 1
+        else:
+            dicionario[elemento] += 1
+    for numeros, contagens in dicionario.items():
+        if contagens >= 5:
+            return 50
+    return 0
